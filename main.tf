@@ -78,7 +78,7 @@ resource "aws_security_group_rule" "alb_egress" {
 
 # ec2-private
 resource "aws_instance" "demo_terramino_ec2_001" {
-  ami                         = "ami-0e86e20dae9224db8"
+  ami                         = "ami-0ecb62995f68bb549"
   instance_type               = "t2.micro"
   subnet_id                   = module.vpc.private_subnets[0]
   vpc_security_group_ids      = [aws_security_group.demo_terramino_instance_ec2_sg_001.id]
@@ -95,7 +95,7 @@ resource "aws_instance" "demo_terramino_ec2_001" {
 resource "aws_launch_template" "terramino" {
   name_prefix   = "terramino-lt-"
 
-  image_id      = "ami-0ad13a018fda22687"
+  image_id      = "ami-0ecb62995f68bb549"
   instance_type = "t2.micro"
   key_name      = aws_key_pair.terramino.key_name
 

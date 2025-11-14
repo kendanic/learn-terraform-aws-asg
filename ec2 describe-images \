@@ -1,0 +1,2083 @@
+{
+    "Images": [
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0a6d86112f4db6d94",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 25.10, UNSUPPORTED daily arm64 questing image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images-testing/hvm-ssd-gp3/ubuntu-questing-daily-arm64-minimal-20250809",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-08-09T08:18:04.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-0087a143f94d734ab",
+            "ImageLocation": "amazon/ubuntu-minimal/images-testing/hvm-ssd-gp3/ubuntu-questing-daily-arm64-minimal-20250809",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-08-09T08:18:04.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0b030d7783e04bd00",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 22.04, UNSUPPORTED daily amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-server-20250627",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-06-27T06:42:33.000Z",
+            "ImageId": "ami-00a4d30f0bb6a1e49",
+            "ImageLocation": "amazon/ubuntu/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-server-20250627",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-06-27T06:42:33.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0a3499fc3f0d5c184",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 23.10, amd64 mantic image build on 2024-03-01",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-server-20240301",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2026-03-01T03:15:33.000Z",
+            "ImageId": "ami-00c8f89961198e9a5",
+            "ImageLocation": "amazon/ubuntu/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-server-20240301",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2024-03-01T03:15:33.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-01174edebe8207e5b",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (1.32), 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.32/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20251001",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-10-01T19:38:09.000Z",
+            "ImageId": "ami-00cf4c59d85b8d717",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.32/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20251001",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-10-01T19:38:09.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0f45a80b91fd090fc",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 24.04, amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-minimal-20251113",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-11-13T13:17:13.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-003ab3e18f5bcf12a",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-minimal-20251113",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-11-13T13:17:13.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-088f67e4bbc18daa7",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Server Pro, 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-server-20250906",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-09-06T06:54:56.000Z",
+            "ImageId": "ami-00e04fb54bf5275b4",
+            "ImageLocation": "amazon/ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-server-20250906",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-06T06:54:56.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-099f3cf9a6206474f",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.33), 24.04 LTS, amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20251103",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-11-03T13:58:34.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-004550e838f0da45e",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20251103",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-11-03T13:58:34.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-04624a8fe7b3e0912",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.32), 24.04 LTS, arm64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.32/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250607",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-06-07T13:38:38.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-0022a23f36c57e940",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.32/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250607",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-06-07T13:38:38.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0f31217a8529d26a3",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (1.29), 22.04 LTS, arm64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.29/images/hvm-ssd/ubuntu-jammy-22.04-arm64-server-20251001",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-10-01T19:11:58.000Z",
+            "ImageId": "ami-00ae3d9ca1b9a6675",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.29/images/hvm-ssd/ubuntu-jammy-22.04-arm64-server-20251001",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-10-01T19:11:58.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0f58739bcc7b97a79",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 22.04, arm64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-arm64-minimal-20250919",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-09-19T19:07:00.000Z",
+            "ImageId": "ami-00701142f629ba563",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-arm64-minimal-20250919",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-19T19:07:00.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0506dcb3e448ec577",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 24.04, UNSUPPORTED daily amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images-testing/hvm-ssd-gp3/ubuntu-noble-daily-amd64-minimal-20250919",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-09-19T13:20:57.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-009343e6f4bbc9451",
+            "ImageLocation": "amazon/ubuntu-minimal/images-testing/hvm-ssd-gp3/ubuntu-noble-daily-amd64-minimal-20250919",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-19T13:20:57.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-077bafb000d6fa287",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (1.33), 24.04 LTS, arm64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250625",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-06-25T13:30:44.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-00aea463a542a99b7",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250625",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-06-25T13:30:44.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "Iops": 3000,
+                        "SnapshotId": "snap-041719733c1dc17cb",
+                        "VolumeSize": 40,
+                        "VolumeType": "gp3",
+                        "Throughput": 125,
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "AWS ParallelCluster AMI for ubuntu2004, kernel-5.15.0-1063-aws, lustre-5.15.0.1063.69~20.04.1, efa-2.8.0-1.amzn1, nvidia-535.183.01, cuda-12.2.20230822",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "aws-parallelcluster-3.10.0-ubuntu-2004-lts-hvm-arm64-202406270002 2024-06-27T00-05-54.595Z",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2026-06-27T16:50:10.000Z",
+            "ImageId": "ami-00446b95dfa0c0794",
+            "ImageLocation": "amazon/aws-parallelcluster-3.10.0-ubuntu-2004-lts-hvm-arm64-202406270002 2024-06-27T00-05-54.595Z",
+            "State": "available",
+            "OwnerId": "247102896272",
+            "CreationDate": "2024-06-27T16:50:10.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-024d967593e1a5bea",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 23.10, amd64 mantic image build on 2024-02-06",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-minimal-20240206",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2026-02-06T16:11:21.000Z",
+            "ImageId": "ami-007aa157b36037022",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-minimal-20240206",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2024-02-06T16:11:21.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-09dc67732f515cd3a",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Server Pro, 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-server-20250829",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-08-29T07:10:30.000Z",
+            "ImageId": "ami-00d58a76e2055c23a",
+            "ImageLocation": "amazon/ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-server-20250829",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-08-29T07:10:30.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-02537bb945efc89bc",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 22.04, UNSUPPORTED daily amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-minimal-20250918",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-09-18T18:51:37.000Z",
+            "ImageId": "ami-001ff1531cad381bf",
+            "ImageLocation": "amazon/ubuntu-minimal/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-minimal-20250918",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-18T18:51:37.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-04ad0954965107a30",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 23.04, arm64 lunar image build on 2023-12-06",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images/hvm-ssd/ubuntu-lunar-23.04-arm64-server-20231206",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "DeprecationTime": "2025-12-07T01:04:27.000Z",
+            "ImageId": "ami-00098fb65669d2797",
+            "ImageLocation": "amazon/ubuntu/images/hvm-ssd/ubuntu-lunar-23.04-arm64-server-20231206",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2023-12-07T01:04:27.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "Iops": 3000,
+                        "SnapshotId": "snap-004eca520c0722baf",
+                        "VolumeSize": 40,
+                        "VolumeType": "gp3",
+                        "Throughput": 125,
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "AWS ParallelCluster AMI for ubuntu2204, kernel-6.2.0-1018-aws, lustre-6.2.0.1018.18~22.04.1, efa-2.8.0-1.amzn1, dcv-2023.1.16388-1, nvidia-535.183.01, cuda-12.2.20230823",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "aws-parallelcluster-3.10.0-ubuntu-2204-lts-hvm-x86_64-202406270002 2024-06-27T00-05-37.443Z",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2026-06-27T16:49:57.000Z",
+            "ImageId": "ami-00ac9387ace82327e",
+            "ImageLocation": "amazon/aws-parallelcluster-3.10.0-ubuntu-2204-lts-hvm-x86_64-202406270002 2024-06-27T00-05-37.443Z",
+            "State": "available",
+            "OwnerId": "247102896272",
+            "CreationDate": "2024-06-27T16:49:57.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-09733bd10ade46bdd",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (1.33), 24.04 LTS, amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20251022",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-10-22T13:38:45.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-005f7d46f1adccabf",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20251022",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-10-22T13:38:45.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-02e44394eb7357ff2",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 25.10, UNSUPPORTED daily amd64 questing image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images-testing/hvm-ssd-gp3/ubuntu-questing-daily-amd64-server-20250608",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-06-08T03:37:08.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-00454a5fbfdac2654",
+            "ImageLocation": "amazon/ubuntu/images-testing/hvm-ssd-gp3/ubuntu-questing-daily-amd64-server-20250608",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-06-08T03:37:08.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0ca001dc5d79d1ff3",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Server Pro, 24.04 LTS, arm64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-pro-server/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-pro-server-20250914",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-09-14T10:52:03.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-00d612bf94cff71d5",
+            "ImageLocation": "amazon/ubuntu-pro-server/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-pro-server-20250914",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-14T10:52:03.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-05e447e14c6e19432",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 25.04, arm64 plucky image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-plucky-25.04-arm64-minimal-20250815",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-08-15T08:07:14.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-00e3311f533f32b07",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-plucky-25.04-arm64-minimal-20250815",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-08-15T08:07:14.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0a7a5a22c019aee19",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.33), 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.33/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250718",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-07-18T19:45:11.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-003eba6894be61af5",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.33/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250718",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-07-18T19:45:11.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-00f4d0ecfeae1bda0",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 22.04, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-amd64-minimal-20250920",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-09-20T18:48:36.000Z",
+            "ImageId": "ami-008363bb6918a3baa",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-amd64-minimal-20250920",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-20T18:48:36.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0bc8b6a2591418658",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (1.31), 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.31/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250515",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-05-15T19:05:20.000Z",
+            "ImageId": "ami-009f8da161ff3c517",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.31/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250515",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-05-15T19:05:20.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0f2d84511195216c4",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (1.29), 20.04 LTS, amd64 focal image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.29/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20250530",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "legacy-bios",
+            "DeprecationTime": "2027-05-30T20:07:23.000Z",
+            "ImageId": "ami-007c17b749c384ac1",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.29/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20250530",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-05-30T20:07:23.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-073bdf98ee2301d41",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 24.04, UNSUPPORTED daily arm64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images-testing/hvm-ssd-gp3/ubuntu-noble-daily-arm64-minimal-20251104",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-11-04T13:29:10.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-002c4803d348c9319",
+            "ImageLocation": "amazon/ubuntu-minimal/images-testing/hvm-ssd-gp3/ubuntu-noble-daily-arm64-minimal-20251104",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-11-04T13:29:10.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0938ec8ffcc9224d0",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Server Pro, 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-server-20250729",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-07-29T06:53:42.000Z",
+            "ImageId": "ami-007390e630488450d",
+            "ImageLocation": "amazon/ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-server-20250729",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-07-29T06:53:42.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "Iops": 3000,
+                        "SnapshotId": "snap-0f013b62253a25705",
+                        "VolumeSize": 45,
+                        "VolumeType": "gp3",
+                        "Throughput": 125,
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "AWS ParallelCluster AMI for ubuntu2204, kernel-6.8.0-1029-aws, lustre-6.8.0-1029.31~22.04.1, efa-2.15.0-1.amzn1, dcv-2024.0.18131-1, nvidia-570.86.15, cuda-12.8.20250116",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "aws-parallelcluster-3.13.2-ubuntu-2204-lts-hvm-arm64-202506200243 2025-06-20T02-46-58.475Z",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-06-24T16:11:04.000Z",
+            "ImageId": "ami-00121ffcd2b52d29b",
+            "ImageLocation": "amazon/aws-parallelcluster-3.13.2-ubuntu-2204-lts-hvm-arm64-202506200243 2025-06-20T02-46-58.475Z",
+            "State": "available",
+            "OwnerId": "247102896272",
+            "CreationDate": "2025-06-24T16:11:04.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0099a7dd398e79ea5",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.31), 24.04 LTS, amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.31/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250701",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-07-01T13:40:36.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-0075475d871286652",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.31/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250701",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-07-01T13:40:36.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0e966fc3e66b7cb01",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (k8s_1.23), 20.04 LTS, arm64 focal image build on 2024-02-01",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20240201",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "DeprecationTime": "2026-02-01T08:31:25.000Z",
+            "ImageId": "ami-005207f214a599b48",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20240201",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2024-02-01T08:31:25.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-086807d3392fb8cef",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 22.04, arm64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-arm64-minimal-20250819",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-08-19T19:17:28.000Z",
+            "ImageId": "ami-003e77a382bd170c9",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-arm64-minimal-20250819",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-08-19T19:17:28.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-05fa401f241d0c8c6",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal Pro, 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-pro-minimal/images/hvm-ssd/ubuntu-jammy-amd64-pro-minimal-20250905",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-09-05T19:28:49.000Z",
+            "ImageId": "ami-00b2814f69bf5cbbb",
+            "ImageLocation": "amazon/ubuntu-pro-minimal/images/hvm-ssd/ubuntu-jammy-amd64-pro-minimal-20250905",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-05T19:28:49.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-002c6dc07e228c491",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 22.04, arm64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-arm64-minimal-20250613",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-06-13T18:58:36.000Z",
+            "ImageId": "ami-00da49c8b5123cd2d",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-arm64-minimal-20250613",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-06-13T18:58:36.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0e47a1d6511e7fcbb",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 23.10, amd64 mantic image build on 2023-11-29",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-minimal-20231129",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2025-11-29T20:28:18.000Z",
+            "ImageId": "ami-006ed7732602b3bf3",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-minimal-20231129",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2023-11-29T20:28:18.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0dcdaf48dc1a12a27",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 22.04, UNSUPPORTED daily amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-minimal-20251005",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-10-05T18:36:09.000Z",
+            "ImageId": "ami-00e912f084733663a",
+            "ImageLocation": "amazon/ubuntu-minimal/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-minimal-20251005",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-10-05T18:36:09.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-04d0c498f520040dc",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.30), 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.30/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20251006",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-10-06T19:42:20.000Z",
+            "ImageId": "ami-00caf7e05385d73fa",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.30/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20251006",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-10-06T19:42:20.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0ed7d905c262b45f6",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 23.10, amd64 mantic image build on 2024-05-14",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-server-20240514",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2026-05-14T03:17:53.000Z",
+            "ImageId": "ami-0087f021f284b370c",
+            "ImageLocation": "amazon/ubuntu/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-server-20240514",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2024-05-14T03:17:53.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-04166b0dcf3aa213c",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 24.04, UNSUPPORTED daily arm64 noble image\"",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images-testing/hvm-ssd-gp3/ubuntu-noble-daily-arm64-server-20251021",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-10-21T11:10:46.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-00974343391ea11f6",
+            "ImageLocation": "amazon/ubuntu/images-testing/hvm-ssd-gp3/ubuntu-noble-daily-arm64-server-20251021",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-10-21T11:10:46.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0af7cb7106f780187",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Server Pro, 24.04 LTS, amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-pro-server/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-pro-server-20250919",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-09-19T10:56:09.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-00095cfc43fa58021",
+            "ImageLocation": "amazon/ubuntu-pro-server/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-pro-server-20250919",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-09-19T10:56:09.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-00d24ec4bd82ae4bd",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.32), 24.04 LTS, amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.32/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250610",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-06-10T13:27:06.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-000846a6ec7cc4dfe",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.32/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250610",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-06-10T13:27:06.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0344b4fb9f8bc532e",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.32), 24.04 LTS, amd64 noble image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.32/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250516",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-05-16T13:20:34.000Z",
+            "ImdsSupport": "v2.0",
+            "ImageId": "ami-0082411da4e795038",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.32/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250516",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-05-16T13:20:34.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0ef57ba89a23f9cb8",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu EKS Node OS (1.29), 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks/k8s_1.29/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250527",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-05-27T19:15:26.000Z",
+            "ImageId": "ami-009775d2dc6ca9cf6",
+            "ImageLocation": "amazon/ubuntu-eks/k8s_1.29/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250527",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-05-27T19:15:26.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-03c2cbd9a3ffc3048",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 22.04, UNSUPPORTED daily amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-server-20250801",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-08-01T07:09:06.000Z",
+            "ImageId": "ami-000e14cd4ab032ce0",
+            "ImageLocation": "amazon/ubuntu/images-testing/hvm-ssd/ubuntu-jammy-daily-amd64-server-20250801",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-08-01T07:09:06.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-085c329e46747a37e",
+                        "VolumeSize": 20,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Pro EKS Node OS (1.30), 22.04 LTS, arm64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-eks-pro/k8s_1.30/images/hvm-ssd/ubuntu-jammy-22.04-arm64-server-20251006",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi",
+            "DeprecationTime": "2027-10-06T19:40:47.000Z",
+            "ImageId": "ami-006c710ad850babd6",
+            "ImageLocation": "amazon/ubuntu-eks-pro/k8s_1.30/images/hvm-ssd/ubuntu-jammy-22.04-arm64-server-20251006",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-10-06T19:40:47.000Z",
+            "Public": true,
+            "Architecture": "arm64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0b15d4e0ed8e3c8cd",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Minimal, 23.04, amd64 lunar image build on 2023-12-07",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-minimal/images/hvm-ssd/ubuntu-lunar-23.04-amd64-minimal-20231207",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2025-12-07T21:32:36.000Z",
+            "ImageId": "ami-00354acb6e3508fd0",
+            "ImageLocation": "amazon/ubuntu-minimal/images/hvm-ssd/ubuntu-lunar-23.04-amd64-minimal-20231207",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2023-12-07T21:32:36.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Ubuntu Pro Linux",
+            "UsageOperation": "RunInstances:0g00",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-00fd6b5b8866747e8",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu Server Pro Fips Updates, 22.04 LTS, amd64 jammy image",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu-pro-fips-updates-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-fips-updates-server-20250128",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2027-01-28T03:43:57.000Z",
+            "ImageId": "ami-00b0da95742f32549",
+            "ImageLocation": "amazon/ubuntu-pro-fips-updates-server/images/hvm-ssd/ubuntu-jammy-22.04-amd64-pro-fips-updates-server-20250128",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": "2025-01-28T03:43:57.000Z",
+            "Public": true,
+            "Architecture": "x86_64",
+            "ImageType": "machine"
+        },
+        {
+            "PlatformDetails": "Linux/UNIX",
+            "UsageOperation": "RunInstances",
+            "BlockDeviceMappings": [
+                {
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-04fe4fa0ab61d3ac7",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3",
+                        "Encrypted": false
+                    },
+                    "DeviceName": "/dev/sda1"
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 23.10, amd64 mantic image build on 2023-12-10",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-server-20231210",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm",
+            "BootMode": "uefi-preferred",
+            "DeprecationTime": "2025-12-10T08:17:09.000Z",
+            "ImageId": "ami-00d8834ea9c9ecd09",
+            "ImageLocation": "amazon/ubuntu/images/hvm-ssd-gp3/ubuntu-mantic-23.10-amd64-server-20231210",
+            "State": "available",
+            "OwnerId": "099720109477",
+            "CreationDate": 
