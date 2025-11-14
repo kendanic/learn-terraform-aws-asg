@@ -1,7 +1,6 @@
 variable "aws_region" {
   description = "AWS region where all resources should be created."
   type        = string
-  default     = "us-east-2"
 }
 # variable "vpc_id" {
 #   description = "The ID of the VPC where resources (EC2, ALB, ASG) should be created."
@@ -21,5 +20,4 @@ variable "aws_region" {
 variable "key_name" {
   description = "The EC2 Key Pair name used to access EC2 instances (only needed if SSH access is required)."
   type        = string
-  default     = "terramino-key"
 }

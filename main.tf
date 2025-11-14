@@ -99,20 +99,20 @@ resource "aws_launch_template" "terramino" {
   instance_type = "t2.micro"
   key_name      = aws_key_pair.terramino.key_name
 
-  vpc_security_group_ids = [
-    aws_security_group.demo_terramino_instance_ec2_sg_001.id
-  ]
-
   user_data = filebase64("${path.module}/user-data.sh")
 
   network_interfaces {
     associate_public_ip_address = false
+    security_groups             = [
+      aws_security_group.demo_terramino_instance_ec2_sg_001.id
+    ]
   }
 
   lifecycle {
     create_before_destroy = true
   }
 }
+
 
 
 # alb
