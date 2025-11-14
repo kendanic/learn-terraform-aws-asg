@@ -1,0 +1,151 @@
+## ALB-ASG-EC2-Nginx
+
+# VPC 
+module "vpc" {
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "2.77.0"
+
+  name = "demo-terramino-vpc"
+  cidr = "10.0.0.0/16"
+
+  azs                  = data.aws_availability_zones.available.names
+  public_subnets       = ["10.0.2.0/24", "10.0.3.0/24"]
+  private_subnets      = ["10.0.4.0/24", "10.0.5.0/24"]
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+
+  tags = {
+    Terraform = "true"
+    Environment = "demo"
+  }
+
+}
+
+# EC2
+resource "aws_instance" "demo_terramino_ec2_001" {
+  ami                    = "ami-005fc0f236362e99f"
+  key_name               = "terramino-key"
+  instance_type          = "t2.micro"
+  subnet_id              = module.vpc.public_subnets[0]
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
+  user_data = file("user-data.sh")
+
+  tags = {
+    Name = "demo-terramino-ec2"
+  }
+}
+
+resource "aws_key_pair" "terramino" {
+  key_name   = "terramino-key"
+  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILYC15qFZeCF6btb4VDD6Dio63uvo1LFuBYlKf+Zq15Z ken@RAD6657"
+}
+
+# Autoscaling
+resource "aws_autoscaling_group" "demo_terramino_asg_001" {
+  name                 = "terramino"
+  min_size             = 1
+  max_size             = 3
+  desired_capacity     = 1
+  launch_configuration = aws_launch_configuration.terramino.name
+  vpc_zone_identifier  = module.vpc.public_subnets
+
+  health_check_type    = "ELB"
+
+  tag {
+    key                 = "Name"
+    value               = "HashiCorp Learn ASG - Terramino"
+    propagate_at_launch = true
+  }
+}
+
+# Create a new load balancer attachment
+resource "aws_autoscaling_attachment" "example" {
+  autoscaling_group_name = aws_autoscaling_group.example.id
+  elb                    = aws_elb.example.id
+}
+
+# Create a new ALB Target Group attachment
+resource "aws_autoscaling_attachment" "example" {
+  autoscaling_group_name = aws_autoscaling_group.example.id
+  lb_target_group_arn    = aws_lb_target_group.example.arn
+}
+
+# Loadbalancer
+resource "aws_lb" "demo_terramino_alb" {
+  name               = "learn-asg-terramino-lb"
+  internal           = false
+  load_balancer_type = "application"
+  security_groups    = [aws_security_group.terramino_lb.id]
+  subnets            = module.vpc.private_subnets
+}
+
+resource "aws_lb_listener" "demo-terramino" {
+  load_balancer_arn = aws_lb.terramino.arn
+  port              = "80"
+  protocol          = "HTTP"
+
+  default_action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.terramino.arn
+  }
+}
+
+resource "aws_lb_target_group" "demo_terramino_lb_tg" {
+  name     = "learn-asg-terramino"
+  port     = 80
+  protocol = "HTTP"
+  vpc_id   = module.vpc.vpc_id
+}
+
+
+
+# security group
+
+resource "aws_security_group" "demo_terramino_instance_ec2_sg_001" {
+  name        = "demo_terramino_instance_ec2_sg_001"
+  description = "Allow all inbound traffic and all outbound traffic"
+  vpc_id = module.vpc.vpc_id
+
+  tags = {
+    Name = "terramino-ec2-sg"
+  }
+}
+
+resource "aws_vpc_security_group_ingress_rule" "inbound_allow_all_traffic" {
+  security_group_id = aws_security_group.demo_terramino_instance_ec2_sg_001.id
+  cidr_ipv4         = "0.0.0.0/0"
+  from_port         = 0
+  ip_protocol       = "-1"
+  to_port           = 0
+}
+
+resource "aws_vpc_security_group_egress_rule" "outbound_allow_all_traffic" {
+  security_group_id = aws_security_group.demo_terramino_instance_ec2_sg_001.id
+  cidr_ipv4         = "0.0.0.0/0"
+  ip_protocol       = "-1"
+}
+
+
+resource "aws_security_group" "demo_terramino_alb_sg_003" {
+  name        = "demo_terramino_alb_sg_003"
+  description = "Allow http inbound traffic and all outbound traffic"
+  vpc_id = module.vpc.vpc_id
+
+  tags = {
+    Name = "terramino-alb-sg"
+  }
+}
+
+resource "aws_vpc_security_group_ingress_rule" "demo_terramino_alb_sg_003_ipv4" {
+  security_group_id = aws_security_group.demo_terramino_alb_sg_003.id
+  cidr_ipv4         = aws_vpc.main.cidr_block
+  from_port         = 80
+  ip_protocol       = "tcp"
+  to_port           = 80
+}
+
+resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv4" {
+  security_group_id = aws_security_group.demo_terramino_alb_sg_003.id
+  cidr_ipv4         = "0.0.0.0/0"
+  ip_protocol       = "-1"
+}
