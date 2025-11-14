@@ -7,7 +7,7 @@ resource "aws_key_pair" "terramino" {
 # vpc
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "2.77.0"
+  version = "5.5.0"
 
   name = "demo-terramino-vpc"
   cidr = "10.0.0.0/16"
@@ -16,14 +16,15 @@ module "vpc" {
   public_subnets  = ["10.0.2.0/24", "10.0.3.0/24"]
   private_subnets = ["10.0.4.0/24", "10.0.5.0/24"]
 
-  create_igw            = true
   enable_nat_gateway    = true
   single_nat_gateway    = true
+  create_igw            = true
   map_public_ip_on_launch = true
 
   enable_dns_support   = true
   enable_dns_hostnames = true
 }
+
 
 # sg
 resource "aws_security_group" "demo_terramino_instance_ec2_sg_001" {
@@ -91,19 +92,28 @@ resource "aws_instance" "demo_terramino_ec2_001" {
 }
 
 # asg lunch-conf
-resource "aws_launch_configuration" "terramino" {
-  name_prefix     = "terramino-lc-"
-  image_id        = "ami-0e86e20dae9224db8"
-  instance_type   = "t2.micro"
-  key_name        = aws_key_pair.terramino.key_name
-  security_groups = [aws_security_group.demo_terramino_instance_ec2_sg_001.id]
-  user_data       = file("${path.module}/user-data.sh")
-  associate_public_ip_address = false
+resource "aws_launch_template" "terramino" {
+  name_prefix   = "terramino-lt-"
+
+  image_id      = "ami-0ad13a018fda22687"
+  instance_type = "t2.micro"
+  key_name      = aws_key_pair.terramino.key_name
+
+  vpc_security_group_ids = [
+    aws_security_group.demo_terramino_instance_ec2_sg_001.id
+  ]
+
+  user_data = filebase64("${path.module}/user-data.sh")
+
+  network_interfaces {
+    associate_public_ip_address = false
+  }
 
   lifecycle {
     create_before_destroy = true
   }
 }
+
 
 # alb
 resource "aws_lb" "demo_terramino_alb" {
@@ -139,16 +149,22 @@ resource "aws_lb_listener" "demo_terramino" {
 # ASG
 resource "aws_autoscaling_group" "demo_terramino_asg_001" {
   name                 = "terramino"
-  launch_configuration = aws_launch_configuration.terramino.name
   min_size             = 1
-  max_size             = 3
+  max_size             = 2
   desired_capacity     = 1
+
   vpc_zone_identifier  = module.vpc.private_subnets
-  health_check_type    = "EC2"
+
+  launch_template {
+    id      = aws_launch_template.terramino.id
+    version = "$Latest"
+  }
+
+  health_check_type = "EC2"
 
   tag {
     key                 = "Name"
-    value               = "HashiCorp Learn ASG - Terramino"
+    value               = "Terramino"
     propagate_at_launch = true
   }
 }
